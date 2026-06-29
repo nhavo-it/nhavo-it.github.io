@@ -1,9 +1,10 @@
-title: Thợ code
+title: Võ Văn Nhã
 author:
   name: Võ Văn Nhã
   email: nhavv.cto@gmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  Làm việc vì đam mê, còn đam mê của mình là tiền.
+  Nơi ghi lại hành trình học tập, nghiên cứu và triển khai các giải pháp công nghệ, AI và chuyển đổi số, cùng những chia sẻ thực tiễn dành cho cơ quan, doanh nghiệp và cộng đồng yêu công nghệ.
+
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
@@ -45,15 +46,25 @@ minima:
     # - username: jekyll2
     #   instance: example.com
 
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
+# Thứ tự menu hiển thị trên header
+header_pages:
+  - about.markdown
+  - portfolio.markdown
+  - blog.markdown
 
 grid_pages:
   - about.markdown
   - portfolio.markdown
   
+# Sass - tắt deprecation warnings từ theme cũ
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - import
+    - global-builtin
+    - color-functions
+    - slash-div
+
 # Build settings
 theme: minima
 

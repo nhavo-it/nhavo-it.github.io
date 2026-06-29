@@ -11,7 +11,7 @@ layout: default
       <a class="page-link" href="{{ my_page.url | relative_url }}">
         <div class="grid-item">
           <div class="grid-thumbnail">
-            <img src="{{ my_page.thumbnail | https://getuikit.com/v2/docs/images/placeholder_600x400.svg }}" /> 
+            <img src="{{ my_page.thumbnail | default: 'https://getuikit.com/v2/docs/images/placeholder_600x400.svg' }}" /> 
           </div>
           <div class="grid-caption">
             <div class="grid-title">{{ my_page.title | escape }}</div>
